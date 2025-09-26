@@ -1,0 +1,16 @@
+{
+  "EmailType": "", 
+  "RecieverMail": "",
+  "CarbonCopyTo": [
+    ""
+  ],
+  "Subject": "",
+  "EmailBody": {
+    "Reciever_Name": "",
+    "Table_Filter_infor": {
+      "CompanyName": "TEST",
+      "Arears": 25000
+    }
+  },
+  "Attachments": []
+}
