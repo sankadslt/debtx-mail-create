@@ -14,7 +14,7 @@ app = FastAPI(
 # Configure logger
 SingletonLogger.configure()
 logger = SingletonLogger.get_logger('appLogger')
-
+json_logger = SingletonLogger.get_logger('jsonLogger')  # Goes to json_logs.json
 
 # Include routers
 app.include_router(email_router, prefix="/api/v1", tags=["Email"])
@@ -35,7 +35,7 @@ def main():
         host = os.getenv("HOST", "0.0.0.0")
         port = int(os.getenv("PORT", 8000))
         
-        logger.info(f"Starting Email API on {host}:{port}")
+        json_logger.info(f"Starting Email API on {host}:{port}")
         uvicorn.run(
             "main:app",
             host=host,
@@ -44,7 +44,7 @@ def main():
             log_level="info"
         )
     except Exception as e:
-        logger.error(f"Failed to start application: {str(e)}")
+        json_logger.error(f"Failed to start application: {str(e)}")
         raise
 
 if __name__ == "__main__":

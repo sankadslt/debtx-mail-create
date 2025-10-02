@@ -1,0 +1,6 @@
+{"asctime": "2025-10-02 21:41:08,374", "name": "jsonLogger", "levelname": "INFO", "message": "Info message", "filename": "test_logging.py", "lineno": 30, "funcName": "<module>", "taskName": null}
+{"asctime": "2025-10-02 21:41:08,374", "name": "jsonLogger", "levelname": "WARNING", "message": "Warning message", "filename": "test_logging.py", "lineno": 31, "funcName": "<module>", "taskName": null}
+{"asctime": "2025-10-02 21:41:08,374", "name": "jsonLogger", "levelname": "ERROR", "message": "Error message", "filename": "test_logging.py", "lineno": 32, "funcName": "<module>", "taskName": null}
+{"asctime": "2025-10-02 21:41:08,374", "name": "jsonLogger", "levelname": "CRITICAL", "message": "Critical message", "filename": "test_logging.py", "lineno": 33, "funcName": "<module>", "taskName": null}
+{"asctime": "2025-10-02 21:41:08,374", "name": "jsonLogger", "levelname": "CRITICAL", "message": "Fatal message", "filename": "test_logging.py", "lineno": 34, "funcName": "<module>", "taskName": null}
+{"asctime": "2025-10-02 21:45:31,485", "name": "jsonLogger", "levelname": "INFO", "message": "Starting Email API on 0.0.0.0:8000", "filename": "main.py", "lineno": 38, "funcName": "main", "taskName": null}
