@@ -122,7 +122,26 @@ template_mapping = {
     "Defaulted-Customers": "defaulted_customers_template",
     "Normal-Information": "plain_template",
     "Table-Information": "table_template",
-    "Action-Required": "action_required_template"
+    "Action-Required": "action_required_template",
+    # Newly added business templates
+    "Cases-Cannot-Forward-To-Mediation": "cases_cannot_forward_to_mediation",
+    "Special-Cases-Approaching-Nego-Validity-Expiry": "special_cases_approching_nego_validity_expiry",
+    "Forward-To-Mediation-Before-Nego-Validity-Expiry": "forward_to_mediation_before_nego_validity_expiry",
+    "Pending-Customer-Response": "pending_customer_response",
+    "Case-Status-Not-Updated": "case_status_not_updated",
+    "Customer-Requested-Further-Info": "customer_requested_further_info",
+    "Non-Settlement-By-RO-Pending-SLT-Handover": "non_settlement_by_RO_pending_slt_handover",
+    "Case-Duration-Exceeded-Six-Years": "case_duation_exceeded_six_years",
+    "Case-Status-Updated-LIT-Prescribed": "case_status_updated_lit_prescribed",
+    "Customer-Agreed-To-Settle": "customer_agreed_to_settle",
+    "Customer-Agreed-To-Settle-30Day-Monitoring": "customer_agreed_to_settle_30day_monitoring",
+    "FTL-LOD-Issued-Awaiting-Customer-Response": "ftl_lod_issued_awaiting_customer_response",
+    "Case-Moved-To-WriteOff": "case_moved_to_writeoff",
+    "Customer-Dispute-Letter-Monitoring": "customer_dispute_letter_monitoring",
+    "Customer-Dispute-Monitoring-One-Year-Payment-Followup": "customer_dispute_monitoring_one_year_payment_followup",
+    "Customer-Payment-Not-Received-Forwarded-Pending-Writeoff": "customer_payment_not_received_forwarded_pending_writeoff",
+    "SLT-Approval-Pending-For-Non-Settlement": "slt_approval_pending_for_non_settlement",
+    "FMB-Pending-Settlement-Agreed-Payment-Confirmation-Pending": "fmb_pending_settlement_agreed_payment_confirmation_pending",
 }
 
 def send_emails_process(request: EmailSenderRequest, background_tasks: BackgroundTasks = None) -> Dict[str, str]:
